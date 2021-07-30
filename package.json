@@ -1,0 +1,28 @@
+{
+  "name": "project-evaluate-news-nlp",
+  "version": "1.0.0",
+  "description": "to evaluate the news article url with NLP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server/index.js",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RioCantre/project-evaluate-news-nlp.git"
+  },
+  "author": "Rio Cantre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RioCantre/project-evaluate-news-nlp/issues"
+  },
+  "homepage": "https://github.com/RioCantre/project-evaluate-news-nlp#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
