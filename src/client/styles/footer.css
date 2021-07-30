@@ -1,0 +1,15 @@
+footer {
+    background: hsla(199, 48%, 19%, 1);
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: #F8F8F8;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: #F8F8F8;
+}
+a:hover {
+    color: #657274;
+}
