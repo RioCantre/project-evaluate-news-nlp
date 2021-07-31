@@ -3,11 +3,6 @@ const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
 
 
-
-const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
 const app = express()
 
 // app.use(express.static('src/client'))
