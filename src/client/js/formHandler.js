@@ -14,11 +14,11 @@ function handleSubmit(event) {
                 document.getElementById("subjectivity").innerHTML = `Subjectivity: ${data.subjectivity}`;
                 document.getElementById("confidence").innerHTML = `Confidence: ${data.confidence}`;
                 document.getElementById("irony").innerHTML = `Irony: ${data.irony}`;
-                document.getElementById("img-url").innerHTML = `<img src="${data.img}" alt="article image">`;
-                document.getElementById("title").innerHTML = `${data.headline}`;
-                document.getElementById("article-detail").innerHTML = `${data.writer} | ${data.date}`;
-                document.getElementById("article-content").innerHTML = ` ${data.text}`;
-                document.getElementById("url-link").innerHTML = `<a href="${data.url}"> Read more</a>`;
+                // document.getElementById("img-url").innerHTML = `<img src="${data.img}" alt="article image">`;
+                // document.getElementById("title").innerHTML = `${data.headline}`;
+                // document.getElementById("article-detail").innerHTML = `${data.writer} | ${data.date}`;
+                // document.getElementById("article-content").innerHTML = ` ${data.text}`;
+                // document.getElementById("url-link").innerHTML = `<a href="${data.url}"> Read more</a>`;
             })
     } else {
         alert('You need to enter the proper URL!')

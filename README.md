@@ -25,9 +25,9 @@ This project requires you to build a web tool that allows users to run Natural L
 
 ## Credit
 - [Webpacks](https://webpack.js.org)
-- [Ouch](https://icons8.com/illustrations)
-- [Meaningcloud](https://www.meaningcloud.com/developer/sentiment-analysis)
 - [Jest](https://jestjs.io/docs/getting-started)
+- [Icons8](https://icons8.com/illustrations)
+- [Meaningcloud](https://www.meaningcloud.com/developer/sentiment-analysis)
 - [Sass](https://sass-lang.com)
 
 
