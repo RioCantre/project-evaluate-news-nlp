@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Test</title>
     </head>
-
+    <script type="text/javascript" src="../../../dist/main.js"></script>
     <body>
 
         <header>
@@ -32,20 +32,6 @@
                 <div id="confidence"></div>
                 <div id="irony"></div>
 
-                <div class="url-content">
-                    <div id="img-url">
-                        <img src="" alt="">
-                    </div>
-                    
-                    <div class="url-article">
-                        <h3 id="title"></h3>
-                        <h4 id="article-detail"></h4>
-                        <p id="article-content"></p>
-                        <div class="url-link">
-                            <a href=""></a>
-                        </div>
-                    </div>
-                </div>
             </section>
         </main>
 
@@ -57,10 +43,10 @@
             if ('serviceWorker' in navigator) {
                 // Use the window load event to keep the page load performant
                 window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('/service-worker.js');
+                    navigator.serviceWorker.register('../../../dist/service-worker.js');
                 });
             }
         </script>
-        <script type="text/javascript" src="../../../dist/main.js"></script>
+
     </body>
 </html>

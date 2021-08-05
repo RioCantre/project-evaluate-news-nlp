@@ -7,18 +7,14 @@ function handleSubmit(event) {
     if(Client.checkForURL(formText)) {
         
         console.log("::: Form Submitted :::")
-        postData('http://localhost:8081/apiCall', {url: formText})
+        postData('http://localhost:8081/apiCall', {url})
             .then((data) => {
                 document.getElementById('polarity').innerHTML = `Polarity: ${data.score_tag}`;
                 document.getElementById("agreement").innerHTML = `Agreement: ${data.agreement}`;
                 document.getElementById("subjectivity").innerHTML = `Subjectivity: ${data.subjectivity}`;
                 document.getElementById("confidence").innerHTML = `Confidence: ${data.confidence}`;
                 document.getElementById("irony").innerHTML = `Irony: ${data.irony}`;
-                // document.getElementById("img-url").innerHTML = `<img src="${data.img}" alt="article image">`;
-                // document.getElementById("title").innerHTML = `${data.headline}`;
-                // document.getElementById("article-detail").innerHTML = `${data.writer} | ${data.date}`;
-                // document.getElementById("article-content").innerHTML = ` ${data.text}`;
-                // document.getElementById("url-link").innerHTML = `<a href="${data.url}"> Read more</a>`;
+        
             })
     } else {
         alert('You need to enter the proper URL!')
