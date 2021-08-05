@@ -1,7 +1,7 @@
 {
   "name": "project-evaluate-news-nlp",
   "version": "1.0.0",
-  "description": "to evaluate the news article url with NLP",
+  "description": "Udacity's project to evaluate the news article url with NLP",
   "main": "index.js",
   "scripts": {
     "test": "jest",
