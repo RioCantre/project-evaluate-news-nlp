@@ -7,7 +7,7 @@ function handleSubmit(event) {
     if(Client.checkForURL(formText)) {
         
         console.log("::: Form Submitted :::")
-        postData('http://localhost:8081/apiCall', {url: formText})
+        postData('/apiCall', {url: formText})
             .then((data) => {
                 document.getElementById('polarity').innerHTML = `Polarity: ${data.score_tag}`;
                 document.getElementById("agreement").innerHTML = `Agreement: ${data.agreement}`;
