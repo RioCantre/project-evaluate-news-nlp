@@ -1,4 +1,4 @@
-const { postRequest } = require('./formHandler');
+const { postRequest } = require('../src/client/js/formHandler');
 
 test('It should send a request to the server', () => {
     expect(

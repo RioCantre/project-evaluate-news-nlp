@@ -6,6 +6,7 @@ const express = require('express')
 const cors = require('cors');
 const app = express()
 
+
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -40,7 +41,8 @@ app.post('/apiCall', async (req, res) => {
 
 
 // designates what port the app will listen to for incoming requests
-app.listen(8888, () => {
+const port = process.env.PORT || 8888;
+app.listen(port, () => {
  console.log('app listening on port 8888!')
 })
 
