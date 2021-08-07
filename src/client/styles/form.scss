@@ -1,12 +1,59 @@
-form {
-    border: 1px solid #545454;
-    border-radius: 3px;
-    padding: 40px;
-    input {
-        padding: 5px 20px;
-        width: 100%;
-        line-height: 16px;
-        margin: 10px 0;
+// form {
+//     border: 1px solid #545454;
+//     border-radius: 3px;
+//     padding: 40px;
+//     input {
+//         padding: 5px 20px;
+//         width: 100%;
+//         line-height: 16px;
+//         margin: 10px 0;
+//     }
+// } 
+
+input {
+    width: 50%;
+    padding: 16px;
+    margin: 5px;
+    border-radius: 40px;
+    border: none;
+    text-align: center;
+    #submit {
+        background: hsla(199, 48%, 19%, 1);
+        color: whitesmoke;
     }
-} 
+    #submit:hover {
+        background: hsla(189, 53%, 56%, 1);
+        color: whitesmoke;
+        cursor: pointer;
+    }
+}
+
+.url-result {
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    margin: auto;
+
+    #results {
+        padding: 10px 20px;
+        padding-right: 30px;
+        margin-top: 20px;
+    }
+    #polarity,
+    #agreement,
+    #subjectivity,
+    #confidence,
+    #irony {
+        padding: 5px;
+        text-align: left;
+    }
+    #results img {
+        width: 250px;
+        margin-top: 30px;
+    }
+    .url-stats {
+        padding: 30px;
+        margin-top: 30px;
+    }
+}
 
