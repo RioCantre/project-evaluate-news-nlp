@@ -24,10 +24,14 @@ module.exports = {
                     use: [ 'style-loader', 'css-loader', 'sass-loader' ]
                 },
                 {
+                    test: /\.html$/i,
+                    loader: "html-loader",
+                },
+                {
                     test: /\.(png|jpe?g|gif)$/i,
                     loader: 'file-loader',
                     options: {
-                    name: 'public/[name].[ext]',
+                        name: 'public/[name].[ext]',
                     }
                 }
                 
@@ -36,17 +40,14 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-                template: "./src/client/views/index.html",
-                filename: "./index.html",
+            template: "./src/client/views/index.html",
+            filename: "./index.html",
         }),
         new CleanWebpackPlugin({
-                // Simulate the removal of files
-                dry: true,
-                // Write Logs to Console
-                verbose: true,
-                // Automatically remove all unused webpack assets on rebuild
-                cleanStaleWebpackAssets: true,
-                protectWebpackAssets: false
+            dry: true,
+            verbose: true,
+            cleanStaleWebpackAssets: true,
+            protectWebpackAssets: false
         })
     ]
 }
