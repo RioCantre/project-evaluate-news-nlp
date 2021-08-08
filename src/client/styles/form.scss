@@ -1,3 +1,6 @@
+p{
+    margin: 20px;
+}
 input {
     width: 50%;
     padding: 16px;
@@ -5,11 +8,14 @@ input {
     border-radius: 40px;
     border: none;
     text-align: center;
-    #submit {
-        background: hsla(199, 48%, 19%, 1);
-        color: whitesmoke;
+    @media(max-width: 425px) {
+        width: 90%;
     }
-    #submit:hover {
+}
+#submit {
+    background: hsla(199, 48%, 19%, 1);
+    color: whitesmoke;
+    &:hover {
         background: hsla(189, 53%, 56%, 1);
         color: whitesmoke;
         cursor: pointer;

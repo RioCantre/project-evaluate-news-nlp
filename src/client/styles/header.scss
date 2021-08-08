@@ -3,9 +3,15 @@ img {
     display: block;
     margin: auto;
     margin-top: 5%;
+    @media(max-width:375px) {
+        width: 300px;
+    }
 }
 header {
     text-align: center;
     font-family: 'Orbitron', sans-serif;
     font-size: 40px;
+    h1 {
+        margin: 20px;
+    }
 }

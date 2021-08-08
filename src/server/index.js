@@ -32,7 +32,7 @@ let allData = [];
 
 // GET route
 app.get('/',  (req, res) => {
-    res.sendFile('dist/index.html')
+    res.sendFile(path.resolve('dist/index.html'));
 })
 
 app.get('/test',  (req, res) => {
