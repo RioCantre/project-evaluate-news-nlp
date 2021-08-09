@@ -1,5 +1,5 @@
 
-const dataResult = document.getElementsByClassName('url-result');
+const dataResult = document.querySelector('.url-result');
 
 function handleSubmit(event) {
     event.preventDefault()
