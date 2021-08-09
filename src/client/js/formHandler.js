@@ -1,3 +1,6 @@
+
+const dataResult = document.getElementsByClassName('url-result');
+
 function handleSubmit(event) {
     event.preventDefault()
 
@@ -7,15 +10,11 @@ function handleSubmit(event) {
     if(Client.checkForURL(formText)) {
         
         console.log("::: Form Submitted :::")
-        postData('/apiCall', {url: formText})
+        postData('/apiCall', { url: formText })
             .then((data) => {
-                document.getElementById('polarity').innerHTML = `Polarity: ${data.score_tag}`;
-                document.getElementById('agreement').innerHTML = `Agreement: ${data.agreement}`;
-                document.getElementById('subjectivity').innerHTML = `Subjectivity: ${data.subjectivity}`;
-                document.getElementById('confidence').innerHTML = `Confidence: ${data.confidence}`;
-                document.getElementById('irony').innerHTML = `Irony: ${data.irony}`;
-
-            })
+                showData(data);
+            });
+            resetValue();
     } else {
         alert('You need to enter the proper URL!')
     }
@@ -42,4 +41,25 @@ const postData = async (url = "", data = {}) => {
     }
 };
 
+const showData = (data) => {
+
+    const updateUI = `
+            <div id="results">
+                <div class="url-stats">
+                    <div id="polarity"> <strong>Polarity:${data.score_tag}</strong> </div>
+                    <div id="agreement"> <strong>Agreement:${data.agreement}</strong> </div>
+                    <div id="subjectivity"><strong>Subjectivity:${data.subjectivity}</strong> </div>
+                    <div id="confidence"> <strong>Confidence:${data.confidence}</strong> </div>
+                    <div id="irony"> <strong>Irony:${data.irony}</strong></div>
+                </div>
+                <img src="/img1.png" alt="robo pic">
+            </div>
+    `
+    dataResult.innerHTML = updateUI;
+}
+
 export { handleSubmit }
+
+const resetValue = () => {
+    document.getElementById('url').value = '';
+}

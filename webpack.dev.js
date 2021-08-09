@@ -25,7 +25,7 @@ module.exports = {
                 },
                 {
                     test: /\.html$/i,
-                    loader: "html-loader",
+                    loader: 'html-loader'
                 },
                 {
                     test: /\.(png|jpe?g|gif)$/i,
@@ -41,7 +41,7 @@ module.exports = {
     plugins: [
         new HtmlWebPackPlugin({
             template: "./src/client/views/index.html",
-            filename: "./index.html",
+            filename: "./index.html"
         }),
         new CleanWebpackPlugin({
             dry: true,
