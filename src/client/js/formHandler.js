@@ -52,7 +52,6 @@ const showData = (data) => {
                     <div id="confidence"> <strong>Confidence:${data.confidence}</strong> </div>
                     <div id="irony"> <strong>Irony:${data.irony}</strong></div>
                 </div>
-                <img src="/img1.png" alt="robo pic">
             </div>
     `
     dataResult.innerHTML = updateUI;
