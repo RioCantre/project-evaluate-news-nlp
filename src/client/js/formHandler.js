@@ -46,11 +46,11 @@ const showData = (data) => {
     const updateUI = `
             <div id="results">
                 <div class="url-stats">
-                    <div id="polarity"> <strong>Polarity:${data.score_tag}</strong> </div>
-                    <div id="agreement"> <strong>Agreement:${data.agreement}</strong> </div>
-                    <div id="subjectivity"><strong>Subjectivity:${data.subjectivity}</strong> </div>
-                    <div id="confidence"> <strong>Confidence:${data.confidence}</strong> </div>
-                    <div id="irony"> <strong>Irony:${data.irony}</strong></div>
+                    <div id="polarity"> <strong>Polarity: ${data.score_tag}</strong> </div>
+                    <div id="agreement"> <strong>Agreement: ${data.agreement}</strong> </div>
+                    <div id="subjectivity"><strong>Subjectivity: ${data.subjectivity}</strong> </div>
+                    <div id="confidence"> <strong>Confidence: ${data.confidence}</strong> </div>
+                    <div id="irony"> <strong>Irony: ${data.irony}</strong></div>
                 </div>
             </div>
     `
