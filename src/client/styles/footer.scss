@@ -2,14 +2,16 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 13px;
-    color: #F8F8F8;
+    color:hsla(0, 0%, 97%, 1);
+;
     padding: 30px;
     background: hsla(199, 48%, 19%, 1);
     a {
         text-decoration: none;
-        color: #F8F8F8;
+        color:hsla(0, 0%, 97%, 1);
     }
     a:hover {
-        color: #657274;
+        color: hsla(188, 7%, 43%, 1);
+;
     }
 }
