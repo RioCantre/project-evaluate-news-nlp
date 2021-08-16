@@ -14,10 +14,10 @@ input {
 }
 #submit {
     background: hsla(199, 48%, 19%, 1);
-    color: whitesmoke;
+    color:hsla(0, 0%, 97%, 1);
     &:hover {
         background: hsla(189, 53%, 56%, 1);
-        color: whitesmoke;
+        color:hsla(0, 0%, 97%, 1);
         cursor: pointer;
     }
 }
