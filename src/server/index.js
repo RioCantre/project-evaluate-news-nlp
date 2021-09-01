@@ -54,6 +54,6 @@ app.post('/apiCall', async (req, res) => {
 // designates what port the app will listen to for incoming requests
 const port = process.env.PORT || 8888;
 app.listen(port, () => {
- console.log('app listening on port 8888!')
+    console.log(`server is running on localhost: ${port}`)
 })
 
