@@ -4,7 +4,7 @@
   "description": "Udacity's project to evaluate the news article url with NLP",
   "main": "index.js",
   "scripts": {
-    "test": "jest --no-cache --verbose --env=jsdom",
+    "test": "jest --no-cache --verbose ",
     "start": "node src/server/index.js",
     "build-prod": "webpack --config webpack.prod.js",
     "build-dev": "webpack serve  --config webpack.dev.js --open"
